@@ -23,7 +23,7 @@ const Started = () => {
     }
   return (
     <>
-                  <div className='bg-gray-800 mt-5 p-3'>
+                  <div className='bg-gray-800 mt-5 p-3' id='about'>
                      <div className='parent block md:flex gap-5 mx-3 mt-6'>
                         <div className='child-one mb-2'>
                             <h1 className='font-bold text-3xl mb-2 text-neonYellowGreen'>Get Started with us today</h1>

@@ -35,7 +35,7 @@ const Header = () => {
                     <li><a href="#home">Home</a></li>
                     <li><a href="#track">Track</a></li>
                     <li><a href="#service">Service</a></li>
-                    <li><a href="/login">About Us</a></li>
+                    <li><a href="#about">About Us</a></li>
                 </ul>
                 <div>
                     <button className="mx-4 hidden md:block">Contact Us</button>
@@ -57,10 +57,10 @@ const Header = () => {
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
-                className="flex justify-center items-center fixed top-[56px] left-[-15px]   bg-black opacity-50">
-                       <div className="flex flex-col gap-4 w-full max-w-lg p-8">
+                className="flex justify-center items-center fixed top-[56px] right-[-15px]  w-[100vw] p-9  bg-black opacity-50">
+                       <div className="flex flex-col gap-4 h-[100vh] w-full p-8">
                          
-                           <motion.ul className="flex flex-col gap-4">
+                           <motion.ul className="flex flex-col   gap-4">
                                
                                <motion.li variants={itemVariants} initial="hidden" animate="visible"
                                 onClick={handleClick}><a href="#home">Home</a></motion.li>
@@ -69,7 +69,7 @@ const Header = () => {
                                <motion.li variants={itemVariants} initial="hidden" animate="visible"
                                 onClick={handleClick}><a href="#service">Service</a></motion.li>
                                <motion.li variants={itemVariants} initial="hidden" animate="visible" 
-                               onClick={handleClick}><a href="/login">About Us</a></motion.li>
+                               onClick={handleClick}><a href="#about">About Us</a></motion.li>
                            </motion.ul>
                     </div>
                     </motion.div>

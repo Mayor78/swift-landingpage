@@ -129,16 +129,50 @@ button:focus-visible {
 
 
 
+/* Ensure container does not scroll manually */
+.review-scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Apply animation to the scroll content */
+.review-scroll-content {
+ 
+  animation: scroll-views 30s linear infinite; /* Adjust timing for the loop */
+}
+
+/* .review-content{
+  display: flex;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  animation: scroll-views 30s ;
+}  */
+
+/* Keyframes for "pause and scroll" effect */
+@keyframes scroll-views {
+  0% {
+    transform: translateX(0);
   }
-  a:hover {
-    color: #747bff;
+  5% {
+    transform: translateX(-100%);
   }
-  button {
-    background-color: #f9f9f9;
+  10% {
+    transform: translateX(-100%);
   }
-} */
+  15% {
+    transform: translateX(-200%);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  25% {
+    transform: translateX(-300%);
+  }
+  30% {
+    transform: translateX(-300%);
+  }
+  /* Repeat for each card depending on the number of cards */
+}

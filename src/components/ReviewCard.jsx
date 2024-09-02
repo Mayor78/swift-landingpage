@@ -27,7 +27,7 @@ const ReviewCard = ({ image, name, occupation, says, rating }) => {
   };
 
   return (
-    <div className="card-review bg-black p-4 rounded-lg text-white">
+    <div className="card-review bg-black h-[13rem] p-4 rounded-lg text-white">
       <div className="flex items-center gap-3 mb-3">
         <img src={image} alt={name} className="w-12 h-12 rounded-full object-cover" />
         <div className="flex-grow">

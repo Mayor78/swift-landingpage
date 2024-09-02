@@ -44,7 +44,7 @@ const Accordion = () => {
       </h2>
       <div className="block md:flex  justify-center mt-8 gap-4">
         {/* Scrollable accordion container */}
-        <div className='max-w-[20rem] mx-3 md:mx-0 mb-3 h-[20rem] overflow-y-auto no-scrollbar border border-gray-300 rounded-md'>
+        <div className='md:max-w-[20rem] mx-3 md:mx-0 mb-3 h-[20rem] overflow-y-auto no-scrollbar border border-gray-300 rounded-md'>
           {ACCORDION.map((item, index) => (
             <AccordionItem
               key={index}
@@ -55,7 +55,7 @@ const Accordion = () => {
             />
           ))}
         </div>
-        <img src={frame} alt="Frame" className='h-[20rem] w-[21rem] mx-3 md:mx-0 md:w-auto'/>
+        <img src={frame} alt="Frame" className='h-[20rem] w-[23rem] mx-3 md:mx-0 md:w-auto'/>
       </div>
       <div className='reveiew-card'>
        <Review/>

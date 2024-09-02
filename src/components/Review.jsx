@@ -10,12 +10,13 @@ const Review = () => {
         What our customers are saying <br /> about us
       </h1>
 
-      <div className="reviewcard max-w-full mx-auto overflow-x-auto snap-x snap-mandatory no-scrollbar">
-        <div className="flex gap-4">
+      {/* Container with animation class */}
+      <div className="review-scroll-container max-w-full mx-auto overflow-hidden">
+        <div className="review-scroll-content flex gap-4">
           {REVIEWS.map((review) => (
             <div
               key={review.id}
-              className="snap-center flex-shrink-0 w-[85%] md:w-[30%] mx-2 my-5"
+              className="review-card snap-center flex-shrink-0 w-[85%] md:w-[30%] mx-2 my-5"
             >
               <ReviewCard
                 id={review.id}

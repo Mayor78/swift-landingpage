@@ -36,7 +36,7 @@ const Services = () => {
     <div className='backed-by bg-deepGreen mt-10 p-3  md:p-16'>
       <p className='text-md text-white mx-3 font-light'>Backed by</p>
       <h1 className='font-bold text-2xl text-white mx-2 mb-6'>Some of our trusted partners.</h1>
-      <div className='flex justify-center gap-10  overflow-x-auto snap-x snap-mandatory no-scrollbar'>
+      <div className=' flex justify-center gap-10  overflow-x-auto snap-x snap-mandatory no-scrollbar'>
         <img src={group} alt='Placeholder' className='h-[30px]' />
         <img src={ciao} alt='Placeholder' className='h-[30px]' />
         <img src={kayak} alt='Placeholder' className='h-[30px]'/>
